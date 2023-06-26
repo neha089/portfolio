@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    background-image: url("https://image.freepik.com/free-photo/blue-dust-explosion-black-background_36326-3747.jpg");
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    text:white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #f0eaea;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #252424;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .about-container img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .card-container {
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-container a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
