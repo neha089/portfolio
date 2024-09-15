@@ -8,6 +8,8 @@
     <title>Portfolio</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
 </head>
@@ -19,13 +21,13 @@
     <div id="header">
         <div class="container">
             <nav>
-                <div class="logo-container">
+                <div class="logo-container"> 
                     <div class="background-box"></div>
                     <div class="logo">NAN</div>
                 </div>
                 <ul id="sidemenu">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#works">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     
@@ -53,94 +55,216 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        I'm Neha Patel, a Computer Science Engineering student from Bharuch, Gujarat, India. Currently pursuing my B.Tech degree at Dharmsinh Desai University Nadiad , I spend 10 hours weekly in technical labs. I thrive on learning, enjoy discussing real-world problems, and love collaborating on exciting projects with new people. My hobbies include reading, listening to flute music, and exploring new places through travel.
+                        I'm Neha Patel, a passionate Computer Science Engineering student from Bharuch, Gujarat, India, currently pursuing my B.Tech degree at Dharmsinh Desai University, Nadiad. As a dedicated learner, I spend over 10 hours weekly in technical labs, constantly honing my skills. Alongside my studies, I proudly serve as a Senior Technical Associator for the Computer Society of India (CSI) DDU branch, where I collaborate on projects and contribute to the tech community.
+                        Now in my 3rd year, I’ve built numerous projects, each expanding my knowledge and problem-solving abilities. Coding excites me, and I’m always eager to explore new technologies and ideas. Beyond the technical realm, I enjoy reading, listening to flute music, and discovering new places through travel.
                     </p>
+    
                     <div class="tab-titles">
-                    
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('coding')">Coding Profiles</p>
                     </div>
-                    
-                    
-                    <div class="tab-contents" id="education">
+    
+                    <!-- Education Tab -->
+                    <div class="tab-contents active-tab" id="education">
                         <ul>
-                            <li><span>2020</span><br>SSC(GSEB) | Narayan vidhyalay | 93.33</li>
-                            <li><span>2022</span><br>HSC(GSEB) | Narayan vidhyalay |91.33</li>
-                            <li><span>2026</span><br>B.tech (Computer Engineering) |Dharmsinh Desai University | 8.86</li>
+                            <li><span>2020</span><br>SSC(GSEB) | Narayan Vidhyalay | 93.33%</li>
+                            <li><span>2022</span><br>HSC(GSEB) | Narayan Vidhyalay | 91.33%</li>
+                            <li><span>2026</span><br>B.Tech (Computer Engineering) | Dharmsinh Desai University | 9.02 CGPA</li>
+                        </ul>
+                    </div>
+    
+                    <!-- Coding Profiles Tab -->
+                    <div class="tab-contents" id="coding">
+                        <ul>
+                            <li><span>LeetCode:</span> <a href="https://leetcode.com/your-profile" target="_blank">https://leetcode.com/your-profile</a></li>
+                            <li><span>CodeChef:</span> <a href="https://www.codechef.com/users/your-profile" target="_blank">https://www.codechef.com/users/your-profile</a></li>
+                            <li><span>Codeforces:</span> <a href="https://codeforces.com/profile/your-profile" target="_blank">https://codeforces.com/profile/your-profile</a></li>
+                            <li><span>HackerRank:</span> <a href="https://www.hackerrank.com/your-profile" target="_blank">https://www.hackerrank.com/your-profile</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <!-- Services section -->
    <!-- Services section -->
-<div id="services">
+   <div id="skills">
     <div class="container">
         <h1 class="sub-title">My Skills</h1>
-        <div class="services-list">
-            <div class="service-item">
+        <div class="skills-grid">
+            <div class="skill-item">
                 <i class="fab fa-cuttlefish"></i>
                 <h2>C/C++</h2>
                 <p>Solved 100+ problems</p>
             </div>
-            <div class="service-item">
+            <div class="skill-item">
                 <i class="fab fa-java"></i>
-                <h2>JAVA</h2>
+                <h2>Java</h2>
                 <p>Core and Advance Java | Solved 50+ problems</p>
             </div>
-            <div class="service-item">
+            <div class="skill-item">
                 <i class="fab fa-python"></i>
                 <h2>Python (Django)</h2>
-                <p>Created one dynamic website</p>
+                <p>Created dynamic website</p>
             </div>
-            <div class="service-item">
+            <div class="skill-item">
                 <i class="fab fa-html5"></i>
-                <h2>HTML / CSS / JAVASCRIPT</h2>
+                <h2>HTML / CSS / JavaScript</h2>
                 <p>Built Portfolio | Games</p>
             </div>
+            <div class="skill-item">
+                <i class="fab fa-node"></i>
+                <h2>Node.js / Express</h2>
+                <p>Backend API development</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <h2>React / Redux</h2>
+                <p>Frontend development</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-docker"></i>
+                <h2>Linux / MySQL / MongoDB</h2>
+                <p>Database management</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-bootstrap"></i>
+                <h2>Bootstrap / Figma / Photoshop</h2>
+                <p>UI/UX design</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-flutter"></i>
+                <h2>Dart / Flutter</h2>
+                <p>Mobile application development</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-php"></i>
+                <h2>PHP</h2>
+                <p>Web development</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-laptop-code"></i>
+                <h2>ASP.NET</h2>
+                <p>Web development</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-cogs"></i>
+                <h2>Spring Boot</h2>
+                <p>Backend framework</p>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <h2>TypeScript</h2>
+                <p>Strongly-typed JavaScript</p>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fab fa-node"></i>
+                <h2>Express.js</h2>
+                <p>Node.js framework</p>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <h2>Servlet</h2>
+                <p>Java web components</p>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <h2>JSP</h2>
+                <p>Java Server Pages</p>
+            </div>
+            
+            
+            
         </div>
     </div>
 </div>
-
-    <div id="works">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
+<div id="works">
+    <div class="container">
+            <h1 class="sub-title">My Projects <span>(Hover to Explore)</span></h1>
+            <p>Hover over the images to explore each project and find the links for more details.</p>
             <div class="works-list">
-    
-                <div class="work">
-                    <img src="govpro.png" alt="GovPro Project">
-                    <div class="layer">
-                        <h3>GovPro</h3>
-                        <p> secure service applications, simplified document management, and efficient scholarship access.Smart pre-filling for streamlined applications. Citizens check queues, book appointments, and access language support. Government officers manage applications with real-time chat.[HTML, CSS, JS, Python (Django)]</p>
-                        <a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                    </div>
+
+            <div class="work">
+                <img src="govpro.png" alt="GovPro Project">
+                <div class="layer">
+                    <h3>GovPro</h3>
+                    <p>Streamlined service applications with smart pre-filling, queue management, real-time chat, and language support. [HTML, CSS, JS, Python(Django)]</p>
+                    <a href="https://github.com/neha089"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
-    
-                <div class="work">
-                    <img src="pic1.PNG" alt="E-learning System Project">
-                    <div class="layer">
-                        <h3>E-learning System</h3>
-                        <p>
-                            Advanced eLearning system - Students access quizzes, track progress, and engage in private real-time chats. Teachers efficiently manage classrooms, quizzes, scores, and student submissions, fostering collaborative learning. Technologies: HTML, CSS, JavaScript, PHP. </p>
-                        <a href="https://github.com/neha089/E-learning-"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-    
-                <div class="work">
-                    <img src="find_me.png" alt="Find Me! Project">
-                    <div class="layer">
-                        <h3>Find Me!</h3>
-                        <p> showcasing a level-based game. Players advance by completing each level, where the objective is to find anime characters, increasing their score to progress. Challenges include time bombs and other abstractions to add difficulty and excitement.[html , css , JavaScript</script></p>
-                        <a href="https://github.com/neha089/js_project"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-    
             </div>
-      
+            
+            <div class="work">
+                <img src="pic1.PNG" alt="E-learning System Project">
+                <div class="layer">
+                    <h3>E-learning System</h3>
+                    <p>Interactive platform for quizzes, progress tracking, and real-time chat. Teachers manage classrooms, quizzes, and scores. [HTML, CSS, JS, PHP]</p>
+                    <a href="https://github.com/neha089/E-learning-"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="find_me.png" alt="Find Me! Project">
+                <div class="layer">
+                    <h3>Find Me!</h3>
+                    <p>Level-based game to find anime characters with increasing challenges. [HTML, CSS, JS]</p>
+                    <a href="https://github.com/neha089/js_project"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            
+            <!-- New Projects -->
+            <div class="work">
+                <img src="Ritucycle.jpg" alt="RituCycle Project">
+                <div class="layer">
+                    <h3>RituCycle</h3>
+                    <p>A comprehensive period tracking app with features like cycle tracking, diet and routine guidance, and AI-based yoga pose detection. [Flutter, Dart,Node.js ,Express]</p>
+                    <a href="https://github.com/neha089/Ritucycle"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="dataalgoquest.png" alt="DataAlgoQuest Project">
+                <div class="layer">
+                    <h3>DataAlgoQuest</h3>
+                    <p>An interactive platform for learning data structures and algorithms through visualizations, quizzes, and coding challenges. [Express,MongoDB, React.js, Node.js,Redux]</p>
+                    <a href="https://github.com/neha089/DataAlgoQuest"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="child_adoption_and_care.png" alt="Child Adoption and Care Project">
+                <div class="layer">
+                    <h3>Child Adoption and Care</h3>
+                    <p>An application focusing on child adoption processes and care management, featuring user-friendly interfaces and efficient data management. [Bootstrap,ASP.net]</p>
+                    <a href="https://github.com/neha089/Child_Adoption_And_Care/tree/master"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="docfinder.png" alt="DocFinder Project">
+                <div class="layer">
+                    <h3>DocFinder</h3>
+                    <p>A tool for finding and managing medical documents and resources, aimed at streamlining document access and organization. [Django , Javascript ,Firebase]</p>
+                    <a href="https://github.com/Nisarg155/Terminal_Titans"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="busreservation.png" alt="Bus Reservation API Project">
+                <div class="layer">
+                    <h3>Bus Reservation API</h3>
+                    <p>REST API service for managing bus reservations with user authentication, booking, and scheduling features. [Spring Boot, Java, MySQL]</p>
+                    <a href="https://github.com/neha089/BR"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            
         </div>
     </div>
-    
+</div>
+ 
     <!-- Contact section -->
    
     <div id="contact">
@@ -154,7 +278,7 @@
                         <a href="https://github.com/neha089"><i class="fa-brands fa-github"></i></a>
                         <a href="https://x.com/nehapat04281292?t=G_Kji2DwLvrFO3teZvLRSQ&s=08"><i class="fa-brands fa-X"></i></a>
                         <a href="https://www.linkedin.com/in/neha-patel-899004260/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="neha_.pdf" >
+                        <a href="NEHA_PATEL.pdf" >
                             <button class="btn btn-download"> Resume</button>
                         </a>
                     </div>
@@ -175,16 +299,25 @@
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+        function openTab(tabName) {
+    var i;
+    var tabContents = document.getElementsByClassName("tab-contents");
+    var tabLinks = document.getElementsByClassName("tab-links");
+
+    // Hide all tab contents
+    for (i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active-tab");
+    }
+
+    // Remove active class from all tab links
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active-link");
+    }
+
+    // Show the clicked tab's content and set the tab link to active
+    document.getElementById(tabName).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+}
 
     </script>
 
